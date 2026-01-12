@@ -1,0 +1,141 @@
+{
+  "secretCode": {
+    "gettingMarried": "Mes tuokiamės",
+    "enterCode": "Įvesti kodą",
+    "placeholder": "Slaptas kodas",
+    "submit": "Įeiti",
+    "wrongCode": "Neteisingas kodas"
+  },
+  "names": {
+    "groom": "Lukas",
+    "bride": "Maria",
+    "couple": "Lukas & Maria"
+  },
+  "nav": {
+    "home": "Pradžia",
+    "story": "Istorija",
+    "schedule": "Tvarkaraštis",
+    "venue": "Vieta",
+    "rsvp": "RSVP"
+  },
+  "hero": {
+    "gettingMarried": "Mes tuokiamės",
+    "scroll": "Slinkti",
+    "viewSchedule": "Peržiūrėti tvarkaraštį"
+  },
+  "sheSaidYes": {
+    "label": "Kvietimas",
+    "title": "Ji pasakė taip!",
+    "inviteText": "Džiaugiamės galėdami pakviesti jus į mūsų vestuves",
+    "date": "2026 m. balandžio 26 d."
+  },
+  "ourStory": {
+    "label": "Mūsų istorija",
+    "title": "Mūsų istorija",
+    "text1": "Mūsų istorija prasidėjo paskutinę žiemos dieną —",
+    "date": "2025 m. vasario 28 d.",
+    "text2": "Nuo pat pirmos akimirkos žinojome, kad Dievas pradėjo kažką ypatingo.",
+    "text3": "Likusią mūsų istorijos dalį išgirsite mūsų vestuvių dieną."
+  },
+  "schedule": {
+    "label": "Tvarkaraštis",
+    "title": "Dienos programa",
+    "items": [
+      {
+        "time": "12–15 val.",
+        "title": "Svečių atvykimas",
+        "details": "Sveikinimo gėrimai ir bendravimas"
+      },
+      {
+        "time": "17 val.",
+        "title": "Ceremonijos pradžia",
+        "details": "Svarbiausias momentas"
+      },
+      {
+        "time": "18–00 val.",
+        "title": "Vestuvių vakarėlis",
+        "details": "Vakarienė, šokiai ir šventimas"
+      }
+    ]
+  },
+  "countdown": {
+    "label": "Atgalinis skaičiavimas",
+    "title": "Diena artėja!",
+    "days": "Dienos",
+    "hours": "Valandos",
+    "min": "Min",
+    "sec": "Sek"
+  },
+  "venue": {
+    "label": "Vieta",
+    "title": "Renginio vieta",
+    "address": [
+      "Charlton Estate",
+      "Jablunycja, Ivano Frankivskas",
+      "Horiškyv g. 333B, 78592"
+    ]
+  },
+  "dressCode": {
+    "label": "Aprangos kodas",
+    "title": "Aprangos kodas",
+    "themeText": "Vestuvių tema —",
+    "themeName": "Šviesiai žalia",
+    "whiteNote": "Balta spalva skirta nuotakai — dėkojame už supratimą",
+    "colors": {
+      "olive": "Alyvuogių",
+      "sage": "Šalavijų",
+      "cream": "Kreminė",
+      "charcoal": "Anglies"
+    }
+  },
+  "rsvp": {
+    "label": "RSVP",
+    "title": "Prašome atsakyti",
+    "deadline": "Prašome pranešti iki",
+    "deadlineDate": "vasario 28 d.",
+    "deadlineEnd": "ar dalyvausite",
+    "button": "Atsakyti dabar",
+    "modal": {
+      "title": "RSVP",
+      "subtitle": "Lukas ir Maria — 2026.04.26",
+      "nameLabel": "Vardas ir pavardė",
+      "namePlaceholder": "Jūsų vardas",
+      "attendLabel": "Ar dalyvausite?",
+      "yes": "Taip",
+      "no": "Ne",
+      "guestsLabel": "Svečių skaičius",
+      "additionalGuestLabel": "Svečio #{number} vardas",
+      "additionalGuestPlaceholder": "Vardas ir pavardė",
+      "foodLabel": "Maisto pageidavimai",
+      "foodPlaceholder": "Alergijos, dietos apribojimai ir kt.",
+      "cancel": "Atšaukti",
+      "submit": "Pateikti",
+      "sending": "Siunčiama...",
+      "success": "Ačiū — gavome jūsų atsakymą.",
+      "error": "Kažkas nepavyko."
+    }
+  },
+  "details": {
+    "label": "DUK",
+    "title": "Detalės ir klausimai",
+    "faqs": [
+      {
+        "question": "Ar yra apgyvendinimas netoliese?",
+        "answer": "Viskas bus paruošta jums. Jums tereikia atsivežti save ir gerą nuotaiką!"
+      },
+      {
+        "question": "Ar meniu tinka veganams?",
+        "answerPrompt": "Jei turite specialių maisto pageidavimų, parašykite čia:",
+        "placeholder": "Parašykite savo pageidavimą..."
+      },
+      {
+        "question": "Ar galima su vaikais?",
+        "answer": "Mielai lauksime jūsų ir jūsų vaikų — jiems bus atskiras vakarėlis!"
+      }
+    ]
+  },
+  "footer": {
+    "thankYou": "Ačiū"
+  }
+}
+

@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-01-11T16:56:42.058Z",
+  "sourceDir": "photos",
+  "outputDir": "public/images",
+  "images": [
+    {
+      "source": "photos/IMG_0501.HEIC",
+      "src": "/images/01-img-0501.webp",
+      "width": 2200,
+      "height": 2933,
+      "alt": "Lukas and Maria"
+    },
+    {
+      "source": "photos/IMG_5782.HEIC",
+      "src": "/images/02-img-5782.webp",
+      "width": 2200,
+      "height": 1650,
+      "alt": "Lukas and Maria"
+    },
+    {
+      "source": "photos/IMG_8080.JPG",
+      "src": "/images/03-img-8080.webp",
+      "width": 2200,
+      "height": 3300,
+      "alt": "Lukas and Maria"
+    },
+    {
+      "source": "photos/IMG_8127.WEBP",
+      "src": "/images/04-img-8127.webp",
+      "width": 1440,
+      "height": 2160,
+      "alt": "Lukas and Maria"
+    },
+    {
+      "source": "photos/IMG_8153.WEBP",
+      "src": "/images/05-img-8153.webp",
+      "width": 1440,
+      "height": 2160,
+      "alt": "Lukas and Maria"
+    },
+    {
+      "source": "photos/IMG_8167.WEBP",
+      "src": "/images/06-img-8167.webp",
+      "width": 1440,
+      "height": 2160,
+      "alt": "Lukas and Maria"
+    },
+    {
+      "source": "photos/IMG_9060 2.HEIC",
+      "src": "/images/07-img-9060-2.webp",
+      "width": 2200,
+      "height": 2933,
+      "alt": "Lukas and Maria"
+    },
+    {
+      "source": "photos/IMG_9083 2.HEIC",
+      "src": "/images/08-img-9083-2.webp",
+      "width": 2200,
+      "height": 2933,
+      "alt": "Lukas and Maria"
+    },
+    {
+      "source": "photos/IMG_9142.HEIC",
+      "src": "/images/09-img-9142.webp",
+      "width": 2200,
+      "height": 1650,
+      "alt": "Lukas and Maria"
+    }
+  ]
+}

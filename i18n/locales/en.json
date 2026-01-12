@@ -1,0 +1,141 @@
+{
+  "secretCode": {
+    "gettingMarried": "We are getting married",
+    "enterCode": "Enter Code",
+    "placeholder": "Secret code",
+    "submit": "Enter",
+    "wrongCode": "Wrong code"
+  },
+  "names": {
+    "groom": "Lukas",
+    "bride": "Maria",
+    "couple": "Lukas & Maria"
+  },
+  "nav": {
+    "home": "Home",
+    "story": "Story",
+    "schedule": "Schedule",
+    "venue": "Venue",
+    "rsvp": "RSVP"
+  },
+  "hero": {
+    "gettingMarried": "We are getting married",
+    "scroll": "Scroll",
+    "viewSchedule": "View Schedule"
+  },
+  "sheSaidYes": {
+    "label": "Invitation",
+    "title": "She said yes!",
+    "inviteText": "We are glad to invite you to our wedding on",
+    "date": "April 26, 2026"
+  },
+  "ourStory": {
+    "label": "Our Story",
+    "title": "Our Story",
+    "text1": "Our story began on the last day of winter —",
+    "date": "February 28, 2025",
+    "text2": "From the very first moment, we knew God had started something special.",
+    "text3": "The rest of our story, you will hear on our wedding day."
+  },
+  "schedule": {
+    "label": "Timeline",
+    "title": "The Schedule",
+    "items": [
+      {
+        "time": "12–3 pm",
+        "title": "Guests arriving",
+        "details": "Welcome drinks and mingling"
+      },
+      {
+        "time": "5 pm",
+        "title": "Ceremony starting",
+        "details": "The most important moment"
+      },
+      {
+        "time": "6 pm – 00 am",
+        "title": "Wedding party",
+        "details": "Dinner, dancing, and celebration"
+      }
+    ]
+  },
+  "countdown": {
+    "label": "Countdown",
+    "title": "D-Day is coming!",
+    "days": "Days",
+    "hours": "Hours",
+    "min": "Min",
+    "sec": "Sec"
+  },
+  "venue": {
+    "label": "Location",
+    "title": "Venue",
+    "address": [
+      "Charlton Estate",
+      "Yablunytsia, Ivano-Frankivsk oblast",
+      "Horishkiv St. 333B, 78592"
+    ]
+  },
+  "dressCode": {
+    "label": "Attire",
+    "title": "Dress Code",
+    "themeText": "The wedding theme is",
+    "themeName": "Light Green",
+    "whiteNote": "White is reserved for the bride — thank you for understanding",
+    "colors": {
+      "olive": "Olive",
+      "sage": "Sage",
+      "cream": "Cream",
+      "charcoal": "Charcoal"
+    }
+  },
+  "rsvp": {
+    "label": "RSVP",
+    "title": "Please Respond",
+    "deadline": "Please let us know before",
+    "deadlineDate": "February 28th",
+    "deadlineEnd": "if you will be attending",
+    "button": "RSVP Now",
+    "modal": {
+      "title": "RSVP",
+      "subtitle": "Lukas & Maria — 26.04.2026",
+      "nameLabel": "Name + Surname",
+      "namePlaceholder": "Your name",
+      "attendLabel": "Will you attend?",
+      "yes": "Yes",
+      "no": "No",
+      "guestsLabel": "Number of guests",
+      "additionalGuestLabel": "Guest #{number} name",
+      "additionalGuestPlaceholder": "Full name",
+      "foodLabel": "Dietary preferences",
+      "foodPlaceholder": "Allergies, dietary restrictions, etc.",
+      "cancel": "Cancel",
+      "submit": "Submit",
+      "sending": "Sending...",
+      "success": "Thank you — we received your RSVP.",
+      "error": "Something went wrong."
+    }
+  },
+  "details": {
+    "label": "FAQ",
+    "title": "Details & Questions",
+    "faqs": [
+      {
+        "question": "Is there accommodation nearby?",
+        "answer": "All things in place will be prepared for you. You only need to bring yourself and a good mood!"
+      },
+      {
+        "question": "Is the menu vegan friendly?",
+        "answerPrompt": "If you have special requests for food, write it here:",
+        "placeholder": "Write your request..."
+      },
+      {
+        "question": "Are children welcome?",
+        "answer": "We will be happy to see you and your kids — they will have their own party!"
+      }
+    ]
+  },
+  "footer": {
+    "thankYou": "Thank You"
+  }
+}
+
