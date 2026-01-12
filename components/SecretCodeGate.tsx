@@ -190,7 +190,7 @@ export function SecretCodeGate({ onUnlock }: SecretCodeGateProps) {
                     onKeyDown={handleKeyDown}
                     placeholder={t("placeholder")}
                     autoFocus
-                    className={`relative rounded-full border bg-[var(--surface)] px-6 py-2.5 font-sans text-[11px] text-center uppercase tracking-[0.14em] text-[var(--text)] backdrop-blur-sm outline-none transition-all duration-300 w-48 ${
+                    className={`relative rounded-full border bg-[var(--surface)] px-6 py-2.5 font-sans text-[16px] text-center uppercase tracking-[0.14em] text-[var(--text)] backdrop-blur-sm outline-none transition-all duration-300 w-56 ${
                       error 
                         ? "border-red-400 placeholder:text-red-400" 
                         : "border-[var(--lightGreen)] placeholder:text-[var(--muted)]"
