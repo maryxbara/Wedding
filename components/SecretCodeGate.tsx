@@ -136,46 +136,74 @@ export function SecretCodeGate({ onUnlock }: SecretCodeGateProps) {
               <motion.div
                 key="button"
                 className="mt-8"
-                initial={{ opacity: 0, scale: 0.94, y: 8, filter: "blur(2px)" }}
-                animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
-                exit={{ opacity: 0, scale: 0.94, y: -8, filter: "blur(2px)" }}
-                transition={{ duration: 1.4, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                initial={{ opacity: 0, y: 12, filter: "blur(3px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                exit={{ opacity: 0, y: -8, filter: "blur(2px)" }}
+                transition={{ duration: 1.6, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
               >
                 <motion.button
                   className="btn-secondary relative overflow-hidden"
                   onClick={() => setShowInput(true)}
+                  initial={{ boxShadow: "0 0 0 rgba(156, 175, 136, 0)" }}
+                  animate={{ 
+                    boxShadow: [
+                      "0 0 0 rgba(156, 175, 136, 0)",
+                      "0 0 20px rgba(156, 175, 136, 0.15)",
+                      "0 0 0 rgba(156, 175, 136, 0)"
+                    ]
+                  }}
                   whileHover={{ 
-                    scale: 1.04,
-                    y: -3,
+                    scale: 1.06,
+                    y: -4,
+                    boxShadow: "0 8px 24px rgba(156, 175, 136, 0.25)"
                   }}
                   whileTap={{ 
-                    scale: 0.96,
+                    scale: 0.97,
                     y: 0
                   }}
                   transition={{ 
                     duration: 0.5, 
                     ease: [0.16, 1, 0.3, 1],
                     scale: { duration: 0.4, ease: [0.19, 1, 0.22, 1] },
-                    y: { duration: 0.4, ease: [0.19, 1, 0.22, 1] }
+                    y: { duration: 0.4, ease: [0.19, 1, 0.22, 1] },
+                    boxShadow: { 
+                      duration: 3, 
+                      repeat: Infinity, 
+                      ease: "easeInOut",
+                      repeatDelay: 1
+                    }
                   }}
                   style={{ transformOrigin: "center" }}
                 >
-                  <span className="relative z-10">{t("enterCode")}</span>
+                  <motion.span 
+                    className="relative z-10"
+                    animate={{ 
+                      letterSpacing: ["0.18em", "0.22em", "0.18em"]
+                    }}
+                    transition={{ 
+                      duration: 4, 
+                      repeat: Infinity, 
+                      ease: "easeInOut" 
+                    }}
+                  >
+                    {t("enterCode")}
+                  </motion.span>
                 </motion.button>
               </motion.div>
             ) : (
               <motion.div
                 key="input"
                 className="flex flex-col items-center gap-4"
-                initial={{ opacity: 0, scale: 0.94, y: 8, filter: "blur(2px)" }}
-                animate={{ opacity: 1, scale: 1, y: 0, filter: "blur(0px)" }}
-                exit={{ opacity: 0, scale: 0.94, y: -8, filter: "blur(2px)" }}
+                initial={{ opacity: 0, y: 8, filter: "blur(2px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                exit={{ opacity: 0, y: -8, filter: "blur(2px)" }}
                 transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
               >
                 <motion.div 
                   className="relative"
                   animate={error ? { x: [-8, 8, -6, 6, -4, 4, 0] } : {}}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
+                  style={{ transform: "scale(0.75)", transformOrigin: "center" }}
                 >
                   <motion.div 
                     className="absolute -inset-1 rounded-full border border-[var(--border)]"
@@ -190,7 +218,7 @@ export function SecretCodeGate({ onUnlock }: SecretCodeGateProps) {
                     onKeyDown={handleKeyDown}
                     placeholder={t("placeholder")}
                     autoFocus
-                    className={`relative rounded-full border bg-[var(--surface)] px-6 py-2.5 font-sans text-[16px] text-center uppercase tracking-[0.14em] text-[var(--text)] backdrop-blur-sm outline-none transition-all duration-300 w-56 ${
+                    className={`relative rounded-full border bg-[var(--surface)] px-8 py-3.5 font-sans text-[16px] text-center uppercase tracking-[0.14em] text-[var(--text)] backdrop-blur-sm outline-none transition-all duration-300 w-64 ${
                       error 
                         ? "border-red-400 placeholder:text-red-400" 
                         : "border-[var(--lightGreen)] placeholder:text-[var(--muted)]"
