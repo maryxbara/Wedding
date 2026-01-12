@@ -30,16 +30,16 @@ export function DressCode() {
                 <span className="text-[var(--lightGreen)]">{t("themeName")}</span>
               </p>
 
-              <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+              <div className="mt-10 flex items-center justify-center gap-3 sm:gap-4">
                 {palette.map((item) => (
-                  <div key={item.name} className="flex flex-col items-center gap-2">
+                  <div key={item.name} className="flex flex-col items-center gap-1.5 sm:gap-2">
                     <div
-                      className="h-12 w-12 rounded-full border-2 border-[var(--border)] shadow-sm transition-transform hover:scale-110"
+                      className="h-10 w-10 sm:h-12 sm:w-12 rounded-full border-2 border-[var(--border)] shadow-sm transition-transform hover:scale-110"
                       style={{ background: item.color }}
                       aria-label={item.name}
                       title={item.name}
                     />
-                    <span className="font-sans text-[10px] uppercase tracking-[0.1em] text-[var(--muted)]">
+                    <span className="font-sans text-[8px] sm:text-[10px] uppercase tracking-[0.08em] sm:tracking-[0.1em] text-[var(--muted)]">
                       {item.name}
                     </span>
                   </div>
