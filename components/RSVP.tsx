@@ -138,7 +138,7 @@ export function RSVP() {
         </FadeIn>
 
         <FadeIn delay={0.2} className="mt-16">
-          <GlassCard arch className="p-10 sm:p-14">
+          <GlassCard arch className="px-8 py-10 pb-14 sm:p-14 sm:pb-16">
             <div className="mx-auto max-w-xl text-center">
               <p className="font-serif text-[clamp(18px,2vw,20px)] leading-relaxed text-[var(--text)]">
                 {t("deadline")}{" "}
@@ -146,7 +146,7 @@ export function RSVP() {
                 {t("deadlineEnd")}
               </p>
 
-              <div className="mt-10">
+              <div className="mt-8 sm:mt-10">
                 <Button
                   onClick={() => {
                     setOpen(true);
