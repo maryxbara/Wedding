@@ -41,58 +41,63 @@ export function Countdown() {
               animate={{ scale: [1, 1.008, 1] }}
               transition={{ duration: 5, repeat: Infinity, ease: [0.4, 0, 0.6, 1] }}
             >
-              <div className="font-serif text-[clamp(32px,5vw,48px)] tracking-[0.05em] text-[var(--text)]">
-                <motion.span
-                  key={mounted ? parts.days : "days-static"}
-                  initial={mounted ? { opacity: 0, y: -10 } : false}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                  suppressHydrationWarning
-                >
-                  {parts.days}
-                </motion.span>
-                <span className="mx-2 text-[var(--lightGreen)]/30">:</span>
-                <motion.span
-                  key={mounted ? parts.hours : "hours-static"}
-                  initial={mounted ? { opacity: 0, y: -10 } : false}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                  suppressHydrationWarning
-                >
-                  {pad2(parts.hours)}
-                </motion.span>
-                <span className="mx-2 text-[var(--lightGreen)]/30">:</span>
-                <motion.span
-                  key={mounted ? parts.minutes : "minutes-static"}
-                  initial={mounted ? { opacity: 0, y: -10 } : false}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                  suppressHydrationWarning
-                >
-                  {pad2(parts.minutes)}
-                </motion.span>
-                <span className="mx-2 text-[var(--lightGreen)]/30">:</span>
-                <motion.span
-                  key={mounted ? parts.seconds : "seconds-static"}
-                  initial={mounted ? { opacity: 0, y: -10 } : false}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
-                  suppressHydrationWarning
-                >
-                  {pad2(parts.seconds)}
-                </motion.span>
+              <div className="flex items-center justify-center gap-1 sm:gap-4">
+                <div className="flex flex-col items-center min-w-[50px] sm:min-w-[60px]">
+                  <motion.span
+                    key={mounted ? parts.days : "days-static"}
+                    initial={mounted ? { opacity: 0, y: -10 } : false}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                    suppressHydrationWarning
+                    className="font-serif text-[28px] sm:text-[clamp(32px,5vw,48px)] tracking-[0.05em] text-[var(--text)]"
+                  >
+                    {parts.days}
+                  </motion.span>
+                  <span className="mt-1 sm:mt-2 font-sans text-[9px] sm:text-[11px] uppercase tracking-[0.1em] sm:tracking-[0.2em] text-[var(--muted)]">{t("days")}</span>
+                </div>
+                <span className="font-serif text-[28px] sm:text-[clamp(32px,5vw,48px)] text-[var(--lightGreen)]/30 self-start">:</span>
+                <div className="flex flex-col items-center min-w-[40px] sm:min-w-[50px]">
+                  <motion.span
+                    key={mounted ? parts.hours : "hours-static"}
+                    initial={mounted ? { opacity: 0, y: -10 } : false}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                    suppressHydrationWarning
+                    className="font-serif text-[28px] sm:text-[clamp(32px,5vw,48px)] tracking-[0.05em] text-[var(--text)]"
+                  >
+                    {pad2(parts.hours)}
+                  </motion.span>
+                  <span className="mt-1 sm:mt-2 font-sans text-[9px] sm:text-[11px] uppercase tracking-[0.1em] sm:tracking-[0.2em] text-[var(--muted)]">{t("hours")}</span>
+                </div>
+                <span className="font-serif text-[28px] sm:text-[clamp(32px,5vw,48px)] text-[var(--lightGreen)]/30 self-start">:</span>
+                <div className="flex flex-col items-center min-w-[40px] sm:min-w-[50px]">
+                  <motion.span
+                    key={mounted ? parts.minutes : "minutes-static"}
+                    initial={mounted ? { opacity: 0, y: -10 } : false}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                    suppressHydrationWarning
+                    className="font-serif text-[28px] sm:text-[clamp(32px,5vw,48px)] tracking-[0.05em] text-[var(--text)]"
+                  >
+                    {pad2(parts.minutes)}
+                  </motion.span>
+                  <span className="mt-1 sm:mt-2 font-sans text-[9px] sm:text-[11px] uppercase tracking-[0.1em] sm:tracking-[0.2em] text-[var(--muted)]">{t("min")}</span>
+                </div>
+                <span className="font-serif text-[28px] sm:text-[clamp(32px,5vw,48px)] text-[var(--lightGreen)]/30 self-start">:</span>
+                <div className="flex flex-col items-center min-w-[40px] sm:min-w-[50px]">
+                  <motion.span
+                    key={mounted ? parts.seconds : "seconds-static"}
+                    initial={mounted ? { opacity: 0, y: -10 } : false}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                    suppressHydrationWarning
+                    className="font-serif text-[28px] sm:text-[clamp(32px,5vw,48px)] tracking-[0.05em] text-[var(--text)]"
+                  >
+                    {pad2(parts.seconds)}
+                  </motion.span>
+                  <span className="mt-1 sm:mt-2 font-sans text-[9px] sm:text-[11px] uppercase tracking-[0.1em] sm:tracking-[0.2em] text-[var(--muted)]">{t("sec")}</span>
+                </div>
               </div>
-              <motion.div 
-                className="mt-6 flex items-center justify-center gap-8 font-sans text-[11px] uppercase tracking-[0.2em] text-[var(--muted)]"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-              >
-                <span>{t("days")}</span>
-                <span>{t("hours")}</span>
-                <span>{t("min")}</span>
-                <span>{t("sec")}</span>
-              </motion.div>
             </motion.div>
           </GlassCard>
         </FadeIn>
